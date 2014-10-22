@@ -1,0 +1,32 @@
+{
+  "name": "nearest-segment",
+  "version": "0.0.1",
+  "description": "Finds the segment of a line nearest to a point",
+  "main": "index.js",
+  "scripts": {
+    "test": "testem",
+    "jshint": "jshint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mediasuitenz/nearest-segment.git"
+  },
+  "keywords": ["nearest segment", "nearest", "segment", "line", "point", "coordinates", "vector"],
+  "author": "matt-in-a-hat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mediasuitenz/nearest-segment/issues"
+  },
+  "homepage": "https://github.com/mediasuitenz/nearest-segment",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4",
+    "mocha-given": "~0.1.3",
+    "testem": "^0.6.18",
+    "catch-error": "~1.0.0"
+  },
+  "dependencies": {
+    "vectors": "~0.1.0"
+  }
+}
