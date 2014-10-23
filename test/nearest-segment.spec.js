@@ -101,6 +101,29 @@ describe('nearestSegment', function () {
     })
   })
 
+  describe('point is before closest which is second', function () {
+    var point
+    var coords
+    var result
+
+    Given('a point', function () {
+      point = [3.5, 5]
+    })
+    And('some coordinates', function () {
+      coords = [[2, 5], [4, 5], [6, 5], [8, 5], [10, 5]]
+    })
+    When('we call the service', function () {
+      result = nearestSegment(point, coords)
+    })
+    Then('the result should be an array', function () {
+      result.should.be.an('array')
+    })
+    And('the result should be the first and second index', function () {
+      result[0].should.equal(0)
+      result[1].should.equal(1)
+    })
+  })
+
   describe('point is after closest coordinate', function () {
     var point
     var coords
