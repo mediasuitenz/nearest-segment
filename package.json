@@ -4,7 +4,9 @@
   "description": "Finds the segment of a line nearest to a point",
   "main": "index.js",
   "scripts": {
-    "test": "testem",
+    "test:dev": "testem",
+    "test:ci": "mocha -u mocha-given -R spec test/**/*.spec.js",
+    "test": "npm run jshint && npm run test:ci",
     "jshint": "jshint ."
   },
   "repository": {
